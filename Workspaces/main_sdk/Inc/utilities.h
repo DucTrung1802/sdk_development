@@ -12,7 +12,9 @@ UART_HandleTypeDef huart1;
 
 uint8_t *uint8Cat(uint8_t *string_1, uint8_t *string_2);
 
-void convPrint(const char *value);
+void convPrintUint8t(uint8_t *value);
+
+void convPrintSrtring(const char *value);
 
 void convPrintInt(int value);
 

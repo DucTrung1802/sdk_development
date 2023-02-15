@@ -29,7 +29,12 @@ uint8_t *uint8Cat(uint8_t *string_1, uint8_t *string_2)
     return concatenated;
 }
 
-void convPrint(const char *value)
+void convPrintUint8t(uint8_t *value)
+{
+    HAL_UART_Transmit(&huart1, (uint8_t *)value, strlen((const char *)value), 500);
+}
+
+void convPrintSrtring(const char *value)
 {
     HAL_UART_Transmit(&huart1, (uint8_t *)value, strlen((const char *)value), 500);
 }
