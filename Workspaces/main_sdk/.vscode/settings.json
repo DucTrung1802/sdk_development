@@ -1,6 +1,7 @@
 {
     "files.associations": {
         "utilities.h": "c",
-        "board.h": "c"
+        "board.h": "c",
+        "main.h": "c"
     }
 }

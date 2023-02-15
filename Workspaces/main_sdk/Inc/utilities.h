@@ -6,15 +6,16 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <main.h>
+#include <math.h>
 
 UART_HandleTypeDef huart1;
 
 uint8_t *uint8Cat(uint8_t *string_1, uint8_t *string_2);
 
-void convPrintConstChar(const char *value);
+void convPrint(const char *value);
 
 void convPrintInt(int value);
 
-void convPrintFloat(float value);
+void convPrintFloat(float value, int digits);
 
 #endif /* UTILITIES_H_ */
