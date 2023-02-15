@@ -24,12 +24,10 @@ void loop() {
   //   Serial.println(count);
   // }
 
-  String received = "";
-  while (SerialPort.available()) {
-    received = SerialPort.readStringUntil('\n');
-    if ((received == "Chun") == 0){
-      Serial.println("Good");
-    }
-    Serial.println(received);
+  // String received = "";
+  if (SerialPort.available()) {
+    char received;
+    received = SerialPort.read();
+    Serial.print(received);
   }
 }
