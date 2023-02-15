@@ -1,0 +1,6 @@
+../Core/Src/main.cpp:248:6:void StartMainTask(void*)	24	static
+../Core/Src/main.cpp:156:6:void SystemClock_Config()	72	static,ignoring_inline_asm
+../Core/Src/main.cpp:77:5:int main()	16	static,ignoring_inline_asm
+../Core/Src/main.cpp:271:6:void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef*)	0	static
+../Core/Src/main.cpp:288:6:void Error_Handler()	0	static,ignoring_inline_asm
+../Core/Src/main.cpp:297:1:cpp)	8	static

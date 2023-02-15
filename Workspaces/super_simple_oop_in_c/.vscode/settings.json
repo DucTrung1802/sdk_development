@@ -1,0 +1,9 @@
+{
+    "files.associations": {
+        "complex.h": "c",
+        "point.h": "c",
+        "main.h": "c",
+        "usart.h": "c",
+        "cmsis_os.h": "c"
+    }
+}
