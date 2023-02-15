@@ -32,3 +32,12 @@ void convPrintConstChar(const char *value)
     uint8_t *output = uint8Cat(value, new_line);
     HAL_UART_Transmit(&huart1, output, strlen((const char *)output), 500);
 }
+
+void convPrintInt(int value)
+{
+    char buffer[15];
+    itoa(value, buffer, 10);
+    uint8_t new_line[] = "\n";
+    uint8_t *output = uint8Cat((uint8_t *)buffer, new_line);
+    HAL_UART_Transmit(&huart1, output, strlen((const char *)output), 500);
+}
