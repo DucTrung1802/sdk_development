@@ -4,19 +4,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
-
-enum StatusType
-{
-    GOOD = 1,
-    BAD = 0
-};
-
+#include <Nbiot.h>
+#include <listEnum.h>
 struct Board
 {
     /* Attributes */
     uint8_t *name;
     enum StatusType status;
-    // struct Nbiot nbiot;
+    struct Nbiot connector;
     // struct Debugger debugger;
     // struct Ota ota;
     // struct Data data;

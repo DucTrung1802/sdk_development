@@ -121,8 +121,7 @@ void StartMainTask(void *argument)
   {
     struct Board *new_board = createBoard("New Board");
     uint8_t *output = new_board->getBoardName(new_board);
-    convPrintUint8t(output);
-    convPrintSrtring("\n");
+
     osDelay(1000);
   }
 
