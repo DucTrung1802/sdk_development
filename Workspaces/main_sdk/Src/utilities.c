@@ -26,18 +26,20 @@ uint8_t *uint8Cat(uint8_t *string_1, uint8_t *string_2)
     return concatenated;
 }
 
-void convPrintConstChar(const char *value)
+void convPrint(const char *value)
 {
-    uint8_t new_line[] = "\n";
-    uint8_t *output = uint8Cat((uint8_t *)value, new_line);
-    HAL_UART_Transmit(&huart1, output, strlen((const char *)output), 500);
+    HAL_UART_Transmit(&huart1, (uint8_t *)value, strlen((const char *)value), 500);
 }
 
 void convPrintInt(int value)
 {
     char buffer[15];
     itoa(value, buffer, 10);
-    uint8_t new_line[] = "\n";
-    uint8_t *output = uint8Cat((uint8_t *)buffer, new_line);
+    uint8_t terminate[] = "\0";
+    uint8_t *output = uint8Cat((uint8_t *)buffer, terminate);
     HAL_UART_Transmit(&huart1, output, strlen((const char *)output), 500);
+}
+
+void convPrintFloat(float value)
+{
 }

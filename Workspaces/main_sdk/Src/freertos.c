@@ -122,7 +122,7 @@ void StartMainTask(void *argument)
     // struct Board *new_board = createBoard("New Board");
     // uint8_t *output = new_board->getBoardName(new_board);
     // HAL_UART_Transmit(&huart1, output, strlen((const char *)output), 500);
-    convPrintConstChar("Hello, World!");
+    convPrintConstChar("Hello, world!");
     convPrintInt(12345);
     osDelay(1000);
   }

@@ -15,4 +15,6 @@ void convPrintConstChar(const char *value);
 
 void convPrintInt(int value);
 
+void convPrintFloat(float value);
+
 #endif /* UTILITIES_H_ */
