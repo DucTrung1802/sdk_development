@@ -1,4 +1,4 @@
-#include "Nbiot.h"
+#include <Nbiot.h>
 
 /* Constructor */
 struct Nbiot *createNbiot(int tx_pin, int rx_pin)
@@ -9,6 +9,8 @@ struct Nbiot *createNbiot(int tx_pin, int rx_pin)
         /* TODO: Validate tx_pin, rx_pin */
         nbiot_ptr->tx_pin = tx_pin;
         nbiot_ptr->rx_pin = rx_pin;
+        nbiot_ptr->regist = &regist;
+        nbiot_ptr->sendCommand = &sendCommand;
     }
     return nbiot_ptr;
 }
@@ -20,4 +22,15 @@ void destroyNbiot(struct Nbiot *self)
     {
         free(self);
     }
+}
+
+/* Methods */
+void regist(struct Nbiot *self)
+{
+    /* TODO: do something */
+}
+
+void sendCommand(struct Nbiot *self)
+{
+    /* TODO: do something */
 }

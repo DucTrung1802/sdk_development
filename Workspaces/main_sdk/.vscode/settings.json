@@ -4,6 +4,7 @@
         "board.h": "c",
         "main.h": "c",
         "nbiot.h": "c",
-        "listenum.h": "c"
+        "listenum.h": "c",
+        "debugger.h": "c"
     }
 }

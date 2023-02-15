@@ -1,4 +1,4 @@
-#include "Board.h"
+#include <Board.h>
 
 /* Constructor */
 struct Board *createBoard(const char *name)
@@ -21,6 +21,7 @@ void destroyBoard(struct Board *self)
     }
 }
 
+/* Methods */
 uint8_t *getBoardName(struct Board *self)
 {
     return self->name;

@@ -2,13 +2,27 @@
 #define DEBUGGER_H_
 
 #include <stdio.h>
+#include <stdlib.h>
 
 struct Debugger
 {
-    uint8_t *imei;
-    uint8_t *ccid;
-    uint8_t *operator_code;
-    uint8_t *operator_name;
+    /* Attributes */
+    uint8_t *file_path;
+
+    /* Methods */
+    void (*writeLog)(const char *log_content);
+    void (*sendLog)(void);
 } Debugger;
+
+/* Constructor */
+struct Debugger *createDebugger();
+
+/* Destructor */
+void destroyDebugger(struct Debugger *self);
+
+/* Methods */
+void writeLog(const char *log_content);
+
+void sendLog();
 
 #endif /* DEBUGGER_H_ */
