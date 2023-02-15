@@ -4,15 +4,17 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
-#include <Nbiot.h>
 #include <listEnum.h>
+
+#include <Nbiot.h>
+#include <Debugger.h>
 struct Board
 {
     /* Attributes */
     uint8_t *name;
     enum StatusType status;
     struct Nbiot connector;
-    // struct Debugger debugger;
+    struct Debugger debugger;
     // struct Ota ota;
     // struct Data data;
 
@@ -24,7 +26,7 @@ struct Board
 struct Board *createBoard(const char *name);
 
 /* Destructor */
-// void destroyBoard(struct Board *self);
+void destroyBoard(struct Board *self);
 
 /* Methods */
 uint8_t *getBoardName(struct Board *self);

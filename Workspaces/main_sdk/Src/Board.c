@@ -12,6 +12,15 @@ struct Board *createBoard(const char *name)
     return board_ptr;
 }
 
+/* Destructor */
+void destroyBoard(struct Board *self)
+{
+    if (self != NULL)
+    {
+        free(self);
+    }
+}
+
 uint8_t *getBoardName(struct Board *self)
 {
     return self->name;
