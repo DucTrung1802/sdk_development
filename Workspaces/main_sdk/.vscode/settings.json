@@ -5,6 +5,7 @@
         "main.h": "c",
         "nbiot.h": "c",
         "listenum.h": "c",
-        "debugger.h": "c"
+        "debugger.h": "c",
+        "ota.h": "c"
     }
 }
