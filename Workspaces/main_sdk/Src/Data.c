@@ -4,7 +4,7 @@
 struct Data *createData(int value)
 {
     struct Data *data_ptr = malloc(sizeof(struct Data));
-    if (data_ptr != 0)
+    if (data_ptr != NULL)
     {
         data_ptr->setValue = &setValue;
         data_ptr->getValue = &getValue;
@@ -14,7 +14,7 @@ struct Data *createData(int value)
 /* Destructor */
 void destroyData(struct Data *self)
 {
-    if (self != 0)
+    if (self != NULL)
     {
         free(self);
     }

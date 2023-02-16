@@ -4,7 +4,7 @@
 struct Debugger *createDebugger()
 {
     struct Debugger *debugger_ptr = malloc(sizeof(*debugger_ptr));
-    if (debugger_ptr != 0)
+    if (debugger_ptr != NULL)
     {
         debugger_ptr->writeLog = &writeLog;
         debugger_ptr->sendLog = &sendLog;

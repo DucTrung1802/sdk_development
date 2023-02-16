@@ -4,7 +4,7 @@
 struct Nbiot *createNbiot(int tx_pin, int rx_pin)
 {
     struct Nbiot *nbiot_ptr = malloc(sizeof(*nbiot_ptr));
-    if (nbiot_ptr != 0)
+    if (nbiot_ptr != NULL)
     {
         /* TODO: Validate tx_pin, rx_pin */
         nbiot_ptr->tx_pin = tx_pin;
