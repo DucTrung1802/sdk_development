@@ -9,6 +9,7 @@ struct Data *createData(int value)
         data_ptr->setValue = &setValue;
         data_ptr->getValue = &getValue;
     }
+    return data_ptr;
 }
 
 /* Destructor */
@@ -27,4 +28,5 @@ void setValue(struct Data *self, int value)
 
 int getValue(struct Data *self)
 {
+    return 1;
 }
