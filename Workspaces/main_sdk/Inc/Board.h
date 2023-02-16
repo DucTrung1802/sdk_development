@@ -8,6 +8,8 @@
 
 #include <Nbiot.h>
 #include <Debugger.h>
+#include <Ota.h>
+#include <Data.h>
 struct Board
 {
     /* Attributes */
@@ -15,8 +17,8 @@ struct Board
     enum StatusType status;
     struct Nbiot connector;
     struct Debugger debugger;
-    // struct Ota ota;
-    // struct Data data;
+    struct Ota ota;
+    struct Data data;
 
     /* Methods */
     uint8_t *(*getBoardName)(struct Board *self);

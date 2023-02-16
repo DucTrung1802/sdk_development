@@ -6,6 +6,7 @@
         "nbiot.h": "c",
         "listenum.h": "c",
         "debugger.h": "c",
-        "ota.h": "c"
+        "ota.h": "c",
+        "data.h": "c"
     }
 }
